@@ -127,7 +127,9 @@ public class MainActivity extends Activity {
     private View buildView() {
         CardBuilder card = new CardBuilder(this, CardBuilder.Layout.TEXT);
 
-        card.setText(R.string.hello_world);
+        card.setText("This would be the first clue.");
+        card.setFootnote("Target 1");
+        card.setTimestamp("0:00");
         return card.getView();
     }
 
